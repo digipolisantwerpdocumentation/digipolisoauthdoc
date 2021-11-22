@@ -4,6 +4,8 @@
 ### Parameters
 
 * [Auth methods](#Auth-methods)
+* [Auth Type](#Auth-type)
+* [Service](#Service)
 * [Clientid](#Clientid)
 * [Language](#Language)
 * [Minimal assurance level](#Minimal-assurance-level)
