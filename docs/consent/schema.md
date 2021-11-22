@@ -32,3 +32,36 @@ style startnode fill:#e0e0e0, stroke:#000
 3. Login successful redirect back to consent app
 4. Request consent if necessary
 5. Sends code to /oauth/token endpoint along with the application's Client ID and Client Secret. This results in access token, Request userdata with /me call
+
+
+# logout flow
+---
+
+```mermaid
+graph TD
+
+client{ APP / Client / BFF }
+consent{ Consent APP }
+IDP{ Identity provider }
+startnode(start)
+
+startnode-->client
+client-->|1. start logout|consent
+consent-->|2. remove session from idp|IDP
+IDP-->|3. remove all temp & session data|consent
+consent-->|4. callback back to app|client
+
+style client fill:#ffeb3b, stroke:#000
+style consent fill:#ef5350, stroke:#000
+style IDP fill:#aed581, stroke:#000
+style startnode fill:#e0e0e0, stroke:#000
+
+```
+
+### Flow
+
+1. Click logout link and redirect to consent app
+2. Redirect to IDP
+3. Logout successful redirect back to consent app
+4. cleanup data and callback redirect to app
+5. app cleans local session
