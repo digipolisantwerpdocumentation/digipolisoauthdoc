@@ -1,4 +1,4 @@
-# Start login
+# Start Logout
 [1. in schema](/consent/schema?id=logout-flow)
 
 ### Parameters
