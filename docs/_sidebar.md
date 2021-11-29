@@ -15,6 +15,7 @@
 * * [Provant-profiel](/scopes/provantprofiel)
 * * [Zorgbedrijf-profiel](/scopes/Mprofiel)
 * * [FAS-profiel](/scopes/fasprofiel)
+* [**API**](/api/)
 * [**Modules**](/modules/)
 * * [Nodejs (@digipolis/auth)](/modules/nodejs)
 *
