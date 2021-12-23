@@ -1,5 +1,4 @@
 
-* [**About**](/DOC)
 * [**OAuth2 provider**](/)
 * * [Schema](/consent/schema)
 * * [Login params](/consent/loginparams)
