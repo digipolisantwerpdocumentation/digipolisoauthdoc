@@ -27,11 +27,11 @@ style startnode fill:#e0e0e0, stroke:#000
 
 ### Flow
 
-1. Click login link and redirect to consent app
-2. Redirect to IDP and enter authentication credentials
-3. Login successful redirect back to consent app
-4. Request consent if necessary
-5. Sends code to /oauth/token endpoint along with the application's Client ID and Client Secret. This results in access token, Request userdata with /me call
+1. klik login link en redirect naar consent app
+2. redirect naar de IDP en login
+3. login ok, redirect terug naar de consent app
+4. consent vraag indien nodig
+5. code naar /oauth/token endpoint met de Client ID en Client Secret. Dit resulteert in access token, Vraag userdata op met /me call
 
 
 # logout flow
@@ -60,8 +60,8 @@ style startnode fill:#e0e0e0, stroke:#000
 
 ### Flow
 
-1. Click logout link and redirect to consent app
-2. Redirect to IDP
-3. Logout successful redirect back to consent app
-4. cleanup data and callback redirect to app
-5. app cleans local session
+1. klik logout link en redirect naar de consent app
+2. redirect naar IDP
+3. logout ok, redirect terug naar de consent app
+4. data clear van tijdelijke bronnen en callback redirect naar app
+5. app verwijderd local session

@@ -17,4 +17,4 @@
 * [**API**](/api/)
 * [**Modules**](/modules/)
 * * [Nodejs (@digipolis/auth)](/modules/nodejs)
-*
+* [**Documentatie**](/DOC.md)

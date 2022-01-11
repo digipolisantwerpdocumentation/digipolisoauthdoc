@@ -11,7 +11,7 @@
 
 ### Clientid
 
-?> Client id from api-store / workplace.
+?> Client id van api-store / workplace.
 
 | key       | Location | Required | Name        | values       |
 | --------- | -------- |--------- | ----------- | ------------ |
@@ -25,7 +25,7 @@
 
 ### Service
 
-?> The service to log out, e.g. "astad.mprofiel.v1"
+?> De service om uit te loggen bv "astad.mprofiel.v1"
 
 
 | key       | Location | Required | Name        | values             |
@@ -40,7 +40,7 @@
 
 ### Data
 
-?> Additional parameters encrypted
+?> Geencrypteerde data
 
 
 ##### DataObject
@@ -90,7 +90,7 @@ const encrypted_data = encrypt(data, client_secret)
 
 ### Auth type
 
-?> optional: use the same auth_type which was passed to the login redirect (if set to "so", Azure logout for SO will be triggered)
+?> optional: gebruik de zelfde auth_type als bij login
 
 | key       | Location | Required | Name        | values             |
 | --------- | -------- |--------- | ----------- | ------------------ |

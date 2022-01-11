@@ -1,7 +1,7 @@
 # Profiles
 
 ## M-Profiel
-The m-profiel is an employee profile and is used for internal applications
+The m-profiel is een medewerker profiel
 
 | Scopes                                                  | Service             |
 | ------------------------------------------------------- | ------------------- |
@@ -9,7 +9,7 @@ The m-profiel is an employee profile and is used for internal applications
 
 
 ## A-Profiel
-The a-profiel is an citizen profile and is used for apps for citizens this includes apps in the enterprise (business owner) context
+The m-profiel is een burger profiel
 
 #### Methods:
 
@@ -40,7 +40,7 @@ The a-profiel is an citizen profile and is used for apps for citizens this inclu
 
 
 ## PZA-Profile
-The pza-profile is an employee profile and is used for internal applications
+The m-profiel is een medewerker profiel
 
 | Scopes                                                  | Service               |
 | ------------------------------------------------------- | --------------------- |
@@ -48,7 +48,7 @@ The pza-profile is an employee profile and is used for internal applications
 
 
 ## SO-Profile
-The so-profile is an employee profile and is used for internal applications
+The m-profiel is een medewerker profiel
 
 | Scopes                                                  | Service               |
 | ------------------------------------------------------- | --------------------- |
@@ -56,14 +56,14 @@ The so-profile is an employee profile and is used for internal applications
 
 
 ## Zorgbedrijf-Profile
-The Zorgbedrijf-profile is an employee profile and is used for internal applications
+The m-profiel is een medewerker profiel
 
 | Scopes                                                  | Service               |
 | ------------------------------------------------------- | --------------------- |
 | [M-profiel](/scopes/Mprofiel)                           |  m-profiel            |
 
 ## Provant-Profile
-The Provant-profile is an employee profile and is used for internal applications
+The m-profiel is een medewerker profiel
 
 | Scopes                                                  | Service               |
 | ------------------------------------------------------- | --------------------- |

@@ -23,7 +23,7 @@
 | ------| -------- |--------- | ------------ | ------------ |
 | state | query    | false    | state        | random value |
 
-!> Check if the value matches on return
+!> vergelijk waarde
 
 ```bash
 # Example
@@ -38,7 +38,7 @@
 | ------------- | -------- |--------- | ------------- | ------------------------ |
 | response_type | query    | true     | response type | code / token(deprecated) |
 
-!> Token is deprecated for Security reasons
+!> Token is deprecated
 
 ```bash
 # Example
@@ -48,7 +48,7 @@
 
 ### Save Consent
 
-?> Save consent in step [4.](/consent/schema) This prevents the consent from being asked every time to the same user.
+?> Save consent in stap [4.](/consent/schema) . Hiermee wordt de consentvraag niet meer opnieuw gesteld
 
 | key          | Location | Required | Name         | values                     |
 | ------------ | -------- |--------- | ------------ | -------------------------- |
@@ -62,13 +62,13 @@
 
 ### Redirect uri
 
-?> Url where code should be send to.
+?> Url waar de code op zal binnenkomen.
 
 | key          | Location | Required | Name         | values                     |
 | ------------ | -------- |--------- | ------------ | -------------------------- |
 | redirect_uri | query    | true     | Redirect uri | [APPURL_TO_SEND_CODE_TO]   |
 
-!> Note that this url should also be set in the api-store
+!> Deze url moet ook ingesteld worden op de api-store
 
 ```bash
 # Example
@@ -78,7 +78,7 @@
 
 ### Clientid
 
-?> Client id from api-store / workplace.
+?> Client id van api-store / workplace.
 
 | key       | Location | Required | Name        | values       |
 | --------- | -------- |--------- | ----------- | ------------ |
@@ -92,13 +92,13 @@
 
 ### Auth methods
 
-?> Allowed Auth methods. Order is respected
+?> Auth methodes. Volgorde wordt gerespecteerd
 
 | key           | Location | Required | Name        | values                       |
 | ------------- | -------- |--------- | ----------- | ---------------------------- |
 | auth_methods  | query    | true     | scope       | space separated auth methods |
 
-!> Only in Authentication2.0
+!> Enkel in Authentication2.0
 
 ```bash
 # Example
@@ -108,13 +108,13 @@
 
 ### Minimal assurance level
 
-?> Filter Auth methods. Combined with auth_methods
+?> Filter Auth methodes. combinatie met auth_methods
 
 | key           | Location | Required | Name        | values                   |
 | ------------- | -------- |--------- | ----------- | ------------------------ |
 | save_consent  | query    | false    | scope       | low / substantial / high |
 
-!> Only in Authentication2.0
+!> Enkel in Authentication2.0
 
 ```bash
 # Example
@@ -123,7 +123,7 @@
 
 ### Language
 
-?> UI language
+?> UI taal
 
 | key | Location | Required | Name        | values            |
 | --- | -------- |--------- | ----------- | ----------------- |
