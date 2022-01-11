@@ -1,8 +1,6 @@
-# About
+# Doel
 ---
 
-### Purpose
+Het doel van deze documentatie is om het integreren met de Digipolis authenticatie systemen te vergemakkelijken. Deze documentatie zal publiek beschikbaar zijn op Github. Aanpassingen en toevoegingen worden ten zeerste geapprecieerd maar hou in gedachte dat dit publieke documetatie is dus gebruik **NOOIT** api-keys, client-credentials, unique identifiers. Gebruik hier liever placeholders of dummy waarden.
 
-The purpose of this documentation it make integration with the Digipolis authentication systems easier. This documentation will be publicly available on Github. Changes and Improvements are **HIGHLY** appreciated. However, keep in mind this is public information that should **NEVER** contain api-keys, client-credentials, unique identifiers referencing production systems. Simply replace this by placeholders or dummy values.
-Changes can be requested by Pull Requests / Github issues
-
+Aanpassingen kunnen worden ingestuurd via Pull Requests / Github issues
