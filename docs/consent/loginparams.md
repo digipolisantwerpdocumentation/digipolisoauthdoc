@@ -17,13 +17,13 @@
 
 ### State
 
-?> Security measure.
+?> Security.
 
 | key   | Location | Required | Name         | values       |
 | ------| -------- |--------- | ------------ | ------------ |
 | state | query    | false    | state        | random value |
 
-!> vergelijk waarde
+!> vergelijk waarde na login
 
 ```bash
 # Example
@@ -32,7 +32,7 @@
 
 ### Response type
 
-?> Return token or Code.
+?> Krijg een token of code.
 
 | key           | Location | Required | Name          | values                   |
 | ------------- | -------- |--------- | ------------- | ------------------------ |
@@ -48,7 +48,7 @@
 
 ### Save Consent
 
-?> Save consent in stap [4.](/consent/schema) . Hiermee wordt de consentvraag niet meer opnieuw gesteld
+?> Save consent in stap [4.](/consent/schema) . Hiermee wordt de consent vraag niet meer opnieuw gesteld
 
 | key          | Location | Required | Name         | values                     |
 | ------------ | -------- |--------- | ------------ | -------------------------- |
@@ -92,7 +92,7 @@
 
 ### Auth methods
 
-?> Auth methodes. Volgorde wordt gerespecteerd
+?> Auth methodes. Volgorde wordt gerespecteerd.
 
 | key           | Location | Required | Name        | values                       |
 | ------------- | -------- |--------- | ----------- | ---------------------------- |
@@ -108,7 +108,7 @@
 
 ### Minimal assurance level
 
-?> Filter Auth methodes. combinatie met auth_methods
+?> Filter Auth methodes. Houd rekening met met auth_methods
 
 | key           | Location | Required | Name        | values                   |
 | ------------- | -------- |--------- | ----------- | ------------------------ |
