@@ -1,7 +1,7 @@
 ## Levels & methods
 ---
 
-!> only Authentication2.0
+!> Enkel Authentication2.0
 
 ### Levels
 
