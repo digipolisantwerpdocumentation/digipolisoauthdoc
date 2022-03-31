@@ -15,6 +15,7 @@
 * * [Zorgbedrijf-profiel](/scopes/Mprofiel)
 * * [FAS-profiel](/scopes/fasprofiel)
 * [**API**](/api/)
+* [**FAQ**](/faq/)
 * [**Modules**](/modules/)
 * * [Nodejs (@digipolis/auth)](/modules/nodejs)
 * [**Documentatie**](/DOC.md)
