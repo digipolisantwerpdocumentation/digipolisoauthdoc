@@ -1,5 +1,5 @@
 # Start login
-[1. in schema](/consent/schema)
+[1. in schema](/consent/oidc/schema)
 
 ### Parameters
 
@@ -48,7 +48,7 @@
 
 ### Save Consent
 
-?> Save consent in stap [4.](/consent/schema) . Hiermee wordt de consent vraag niet meer opnieuw gesteld
+?> Save consent in stap [4.](/consent/oidc/schema) . Hiermee wordt de consent vraag niet meer opnieuw gesteld
 
 | key          | Location | Required | Name         | values                     |
 | ------------ | -------- |--------- | ------------ | -------------------------- |
@@ -78,7 +78,7 @@
 
 ### Clientid
 
-?> Client id van api-store / workplace.
+?> Client id van workplace / keycloak client.
 
 | key       | Location | Required | Name        | values       |
 | --------- | -------- |--------- | ----------- | ------------ |
@@ -89,6 +89,19 @@
 /?client_id=[CLIENTID]
 ```
 
+### Scope
+
+?> scopes from keycloak client.
+
+| key       | Location | Required | Name        | values        |
+| --------- | -------- |--------- | ----------- | ------------- |
+| client_id | query    | true     | scope       | [clientscope] |
+
+```bash
+# Example
+/?client_id=[scopelist spaced]
+```
+
 
 ### Auth methods
 
@@ -96,9 +109,9 @@
 
 | key           | Location | Required | Name        | values                       |
 | ------------- | -------- |--------- | ----------- | ---------------------------- |
-| auth_methods  | query    | true     | scope       | space separated auth methods |
+| auth_methods  | query    | true     | auth_method | space separated auth methods |
 
-!> Enkel in Authentication2.0
+!> Enkel in Authentication2.0/3.0
 
 ```bash
 # Example
@@ -132,4 +145,41 @@
 ```bash
 # Example
 /?lng=nl
+```
+
+### Code Challenge
+
+?> oidc+pkce concept
+
+| key            | Location | Required   | Name        | values               |
+| -------------- | -------- |----------- | ----------- | -------------------- |
+| code_challenge | query    | for mobile | Language    | hashed code_verifier |
+
+```bash
+# Example
+/?code_challenge=abc
+```
+### Nonce
+
+?> oidc concept check nonce in token after exchange
+
+| key            | Location | Required   | Name        | values               |
+| -------------- | -------- |----------- | ----------- | -------------------- |
+| nonce          | query    | false      | Language    | nonce                |
+
+```bash
+# Example
+/?nonce=nonceabc
+```
+### OIDC issuer
+
+?> oidc_issuer
+
+| key            | Location | Required   | Name        | values               |
+| -------------- | -------- |----------- | ----------- | -------------------- |
+| oidc_issuer    | query    | true       | oidc_issuer | consentappurl        |
+
+```bash
+# Example
+/?oidc_issuer=consentappurl
 ```

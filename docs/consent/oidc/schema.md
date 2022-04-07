@@ -1,6 +1,7 @@
 # Authorization-code flow
 ---
 
+[auth0 doc for pkce](https://auth0.com/docs/get-started/authentication-and-authorization-flow/authorization-code-flow-with-proof-key-for-code-exchange-pkce)
 ```mermaid
 graph TD
 
@@ -12,7 +13,7 @@ startnode(start)
 
 startnode-->client
 client-->|6. get profile data with accesstoken|profile
-client-->|5. get accesstoken|GW
+client-->|5. exchange code|IDP
 client-->|1. start login|consent
 consent-->|4. Consent given OK, return code|client
 consent-->|2. login|IDP
@@ -22,7 +23,6 @@ style client fill:#ffeb3b, stroke:#000
 style consent fill:#ef5350, stroke:#000
 style IDP fill:#aed581, stroke:#000
 style profile fill:#03a9f4, stroke:#000
-style GW fill:#ff9800, stroke:#000
 style startnode fill:#e0e0e0, stroke:#000
 
 ```
@@ -33,7 +33,7 @@ style startnode fill:#e0e0e0, stroke:#000
 2. redirect naar de IDP en login
 3. login ok, redirect terug naar de consent app
 4. consent vraag indien nodig
-5. code naar /oauth/token endpoint met de Client ID en Client Secret. Dit resulteert in access token
+5. code naar /oauth/token endpoint met de Client ID en code verifier. Dit resulteert in access token
 6. Vraag userdata op met /me call
 
 
