@@ -183,3 +183,15 @@
 # Example
 /?oidc_issuer=consentappurl
 ```
+### redirect_uri_lng
+
+?> Taal teruggeven in redirect
+
+| key              | Location | Required | Name        | values       |
+| ---------------- | -------- |--------- | ----------- | ------------ |
+| redirect_uri_lng | query    | false    | Language    | true / false |
+
+```bash
+# Example
+/?redirect_uri_lng=true
+```
