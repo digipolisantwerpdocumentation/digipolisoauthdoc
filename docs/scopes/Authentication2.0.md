@@ -10,6 +10,7 @@
 | astad.aprofiel.v1.name          | aprofiel.name     |
 | astad.aprofiel.v1.phone         | aprofiel.phone    |
 | astad.aprofiel.v1.username      | aprofiel.username |
+| astad.aprofiel.v1.nickname      | aprofiel.nickname |
 | crspersoon.birthdate            |                   |
 | crspersoon.death                |                   |
 | crspersoon.deathdate            |                   |
