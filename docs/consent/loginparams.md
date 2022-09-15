@@ -8,13 +8,13 @@
 * [Service](#Service)
 * [Clientid](#Clientid)
 * [Language](#Language)
-* [redirect_uri_lng](#redirect_uri_lng)
 * [Minimal assurance level](#Minimal-assurance-level)
-* [Redirect uri](#Redirect-uri)
 * [Redirect uri](#Redirect-uri)
 * [Save consent](#Save-consent)
 * [Scope](#Scope)
 * [State](#State)
+* [redirect_uri_lng](#redirect_uri_lng)
+* [redirect_uri_ssokey](#redirect_uri_ssokey)
 
 
 ### State
@@ -146,4 +146,16 @@
 ```bash
 # Example
 /?redirect_uri_lng=true
+```
+### redirect_uri_ssokey
+
+?> ssoKey teruggeven in redirect
+
+| key                   | Location | Required | Name        | values       |
+| --------------------- | -------- |--------- | ----------- | ------------ |
+| redirect_uri_ssokey   | query    | false    | Language    | true / false |
+
+```bash
+# Example
+/?redirect_uri_ssokey=true
 ```
