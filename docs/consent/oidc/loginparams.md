@@ -13,6 +13,9 @@
 * [Save consent](#Save-consent)
 * [Scope](#Scope)
 * [State](#State)
+* [login_hint](#login_hint)
+* [redirect_uri_lng](#redirect_uri_lng)
+* [redirect_uri_ssokey](#redirect_uri_ssokey)
 
 
 ### State
@@ -183,15 +186,39 @@
 # Example
 /?oidc_issuer=consentappurl
 ```
+### login_hint
+
+?> login_hint meegeven dit wordt in de username ingevuld
+
+| key           | Location | Required | Name        | values       |
+| ------------- | -------- |--------- | ----------- | ------------ |
+| login_hint    | query    | false    | login_hint  | true / false |
+
+```bash
+# Example
+/?login_hint=some_username
+```
 ### redirect_uri_lng
 
 ?> Taal teruggeven in redirect
 
-| key              | Location | Required | Name        | values       |
-| ---------------- | -------- |--------- | ----------- | ------------ |
-| redirect_uri_lng | query    | false    | Language    | true / false |
+| key              | Location | Required | Name                 | values       |
+| ---------------- | -------- |--------- | -------------------- | ------------ |
+| redirect_uri_lng | query    | false    | redirect_uri_lng     | true / false |
 
 ```bash
 # Example
 /?redirect_uri_lng=true
+```
+### redirect_uri_ssokey
+
+?> ssoKey teruggeven in redirect
+
+| key                   | Location | Required | Name                    | values       |
+| --------------------- | -------- |--------- | ----------------------- | ------------ |
+| redirect_uri_ssokey   | query    | false    | redirect_uri_ssokey     | true / false |
+
+```bash
+# Example
+/?redirect_uri_ssokey=true
 ```
