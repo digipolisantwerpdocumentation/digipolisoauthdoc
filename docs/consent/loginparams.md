@@ -91,6 +91,19 @@
 /?client_id=[CLIENTID]
 ```
 
+### Scope
+
+?> scopes from service.
+
+| key       | Location | Required | Name        | values        |
+| --------- | -------- |--------- | ----------- | ------------- |
+| scope     | query    | true     | scope       | [clientscope] |
+
+```bash
+# Example
+/?scope=[scopelist spaced]
+```
+
 
 ### Auth methods
 
@@ -98,7 +111,7 @@
 
 | key           | Location | Required | Name        | values                       |
 | ------------- | -------- |--------- | ----------- | ---------------------------- |
-| auth_methods  | query    | true     | scope       | space separated auth methods |
+| auth_methods  | query    | true     | auth methods| space separated auth methods |
 
 !> Enkel in Authentication2.0
 
@@ -112,9 +125,9 @@
 
 ?> Filter Auth methodes. Houd rekening met met auth_methods
 
-| key                      | Location | Required | Name        | values                   |
-| ------------------------ | -------- |--------- | ----------- | ------------------------ |
-| minimal_assurance_level  | query    | false    | scope       | low / substantial / high |
+| key                      | Location | Required | Name                       | values                   |
+| ------------------------ | -------- |--------- | -------------------------- | ------------------------ |
+| minimal_assurance_level  | query    | false    | minimal assurance level    | low / substantial / high |
 
 !> Enkel in Authentication2.0
 

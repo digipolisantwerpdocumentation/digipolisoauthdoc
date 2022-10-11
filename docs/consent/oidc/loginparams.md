@@ -98,11 +98,11 @@
 
 | key       | Location | Required | Name        | values        |
 | --------- | -------- |--------- | ----------- | ------------- |
-| client_id | query    | true     | scope       | [clientscope] |
+| scope     | query    | true     | scope       | [clientscope] |
 
 ```bash
 # Example
-/?client_id=[scopelist spaced]
+/?scope=[scopelist spaced]
 ```
 
 
