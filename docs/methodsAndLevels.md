@@ -27,7 +27,12 @@
 | fas-hintedlogin-eid     |
 | fas-hintedlogin-otp     |
 | fas-hintedlogin-totp    |
+| iam-aprofiel-email      |
+| iam-aprofiel-phone      |
 | iam-aprofiel-userpass   |
+| a-profiel-email         |
+| a-profiel-phone         |
+| acm-bur-itsme-mobile    |
 
 ### Method & level
 | Method                  | Level       |
@@ -44,4 +49,9 @@
 | fas-hintedlogin-eid     | high        |
 | fas-hintedlogin-otp     | substantial |
 | fas-hintedlogin-totp    | substantial |
+| iam-aprofiel-email      | low         |
+| iam-aprofiel-phone      | low         |
 | iam-aprofiel-userpass   | low         |
+| a-profiel-email         | low         |
+| a-profiel-phone         | low         |
+| acm-bur-itsme-mobile    | substantial |
