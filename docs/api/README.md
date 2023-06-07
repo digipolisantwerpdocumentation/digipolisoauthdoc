@@ -23,7 +23,7 @@ example response
 ```
 
 #### Get the browserSession for a specific app
-```GET /sessions/{ssoKey}/clientids/{clientId}```
+```GET /sessions/{ssoKey}/clientid/{clientId}```
 
 | key       | Location | Required | Name         | values             |
 | --------- | -------- |--------- | ------------ | ------------------ |
@@ -50,7 +50,7 @@ example response
 
 
 #### Delete the browserSession for a specific app
-```DELETE /sessions/{ssoKey}/clientids/{clientId}```
+```DELETE /sessions/{ssoKey}/clientid/{clientId}```
 
 | key       | Location | Required | Name         | values             |
 | --------- | -------- |--------- | ------------ | ------------------ |
