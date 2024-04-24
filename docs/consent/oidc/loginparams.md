@@ -7,6 +7,7 @@
 * [Auth Type](#Auth-type)
 * [Service](#Service)
 * [Clientid](#Clientid)
+* [Prompt](#Prompt)
 * [Language](#Language)
 * [Minimal assurance level](#Minimal-assurance-level)
 * [Redirect uri](#Redirect-uri)
@@ -48,6 +49,34 @@
 /?response_type=code
 ```
 
+
+### Prompt (beta)
+
+?> Force Reauthentication in OIDC
+**Known issue: By the login loop this might result in double login prompt**
+
+| key          | Location | Required | Name         | values                     |
+| ------------ | -------- |--------- | ------------ | -------------------------- |
+| prompt       | query    | false    | prompt       | login                      |
+
+```bash
+# Example
+/?prompt=login
+```
+
+### Max age (beta)
+
+?> Maximum Authentication Age.
+https://auth0.com/docs/authenticate/login/max-age-reauthentication#max_age-authentication-request-parameterhttps://auth0.com/docs/authenticate/login/max-age-reauthentication#max_age-authentication-request-parameter
+
+| key          | Location | Required | Name         | values                     |
+| ------------ | -------- |--------- | ------------ | -------------------------- |
+| max_age      | query    | false    | max_age      | {integer}                  |
+
+```bash
+# Example
+/?max_age=7200
+```
 
 ### Save Consent
 

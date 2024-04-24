@@ -16,6 +16,24 @@
 * [redirect_uri_lng](#redirect_uri_lng)
 * [redirect_uri_ssokey](#redirect_uri_ssokey)
 
+### Auth Type
+
+?> authentication type for mprofiel
+
+| key           | Location | Required | Name                | service           | values                   |
+| ------------- | -------- |--------- | ------------------- | ----------------------------------- | --------------- |
+| auth_type     | query    | true     | authentication type | astad.mprofiel.v1                   | form            |
+|               |          |          |                     | astad.mprofiel.v1                   | cloud (beta)    |
+|               |          |          |                     | astad.mprofiel.v1                   | zorgbedrijf     |
+|               |          |          |                     | astad.mprofiel.v1                   | so              |
+|               |          |          |                     | acpaas.pzadatastore.v1 (deprecated) | pza             |
+
+!> Auth type for mprofiel. **Only for service astad.mprofiel.v1 / pza**
+
+```bash
+# Example
+/?auth_type=code
+```
 
 ### State
 
